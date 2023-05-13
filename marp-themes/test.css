@@ -1,0 +1,50 @@
+/* @theme test */
+ 
+@import 'default';
+ 
+section {
+    font-family: "Arial", "Hiragino Maru Gothic ProN";
+    font-size: 32px;
+    padding: 40px;
+    justify-content: flex-start;
+}
+
+section.slide h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+section.slide h2 {
+    position: relative; 
+    display: inline-block;
+    font-size: 60px;
+  }
+
+section.slide h2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(62, 62, 194);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
+
+.container  {
+    display: flex;              /* フレックスボックスにする */
+    align-items:stretch;        /* 縦の位置指定 */
+}
+ 
+.item:nth-child(1) {
+    height: 550px;
+    width: 60%;                 /* 幅指定 */
+    border-right: solid 3px #000000;
+}
+ 
+.item:nth-child(2) {
+    height: 550px;
+    width: 40%;                 /* 幅指定 */
+    padding-left: 10px;
+}
+
