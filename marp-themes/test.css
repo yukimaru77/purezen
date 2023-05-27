@@ -31,6 +31,20 @@ section.slide h2::after{
     left: 0;
   }
 
+/* 
+
+以下は縦棒を入れるための処理
+
+<div class="container">
+    <div class="item">
+
+    </div>
+    <div class="item">
+
+    </div>
+</div>
+といった形で使うと6対4の位置に縦棒が入る
+*/
 .container  {
     display: flex;              /* フレックスボックスにする */
     align-items:stretch;        /* 縦の位置指定 */
