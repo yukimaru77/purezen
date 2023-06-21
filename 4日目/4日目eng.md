@@ -21,7 +21,14 @@ class:
 
 ## Background of Structured Programming
 Assembler language and early versions of FORTRAN and COBOL often resulted in unclear program structures due to the excessive use of goto statements, as depicted in the diagram.
-
+```Basic
+10 X=1
+20 IF X>=1000 THEN GOTO 60
+30 PRINT X
+40 X=X*2
+50 GOTO 20
+60 END
+```
 
 ---
 
@@ -143,7 +150,6 @@ for n in range(10): # To iterate 10 times from 0 to 9, you can use range(10).
     if n == 5:
         break
     print(n)                 # 0, 1, 2, 3, 4
-
 ```
 If you want to skip the current iteration and move to the next iteration in a "for" or "while" loop, you can use "continue." Here are examples of how to use it:
 ```python
